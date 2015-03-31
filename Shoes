@@ -1,0 +1,41 @@
+# Shoes
+package jrJava.shopping;
+
+import java.io.*;
+
+public class Shoes {
+
+	public static void main(String[] args) throws Exception{
+		
+	System.out.println("How much money do you have?");
+	
+	InputStreamReader isr = new InputStreamReader(System.in);
+	BufferedReader br = new BufferedReader(isr);
+	String entered = br.readLine();
+	int amountOfMoney = Integer.parseInt(entered);
+	
+	if(amountOfMoney>=500){
+		System.out.println("Rocking those Jimmy Choos!!");
+	
+	}	
+	else if(amountOfMoney>=200){
+		System.out.println("I hope it's winter cause you'll be wearing Uggs!");
+		
+	}
+	else if(amountOfMoney>=100){
+		System.out.println("See you at the Nine West Outlet!");
+		
+	}
+	else if(amountOfMoney>=45){
+		System.out.println("Just the casual Converse, Toms, and Vans...");
+	}
+	else if(amountOfMoney>=15){
+		System.out.println("Hurt more, Pay-less.");
+		
+	}
+	else{
+		System.out.println("Hey, there's always the lost and found in the lockerroom.");
+	}
+	}
+
+}
